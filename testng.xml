@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BlazeDemo Suite">
+<listeners>
+<listener class-name ="com.Listeners.ExtentITestNGListeners"></listener>
+</listeners>
+
+    <test name="Smoke Tests">
+    	<groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.Blazedemo.Tests.FlightBookingTest"/>
+        </classes>
+    </test>
+    
+    <test name="Functional Tests">
+        <groups>
+            <run>
+                <include name="Functional"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.Blazedemo.Tests.FlightBookingTest"/>
+        </classes>
+    </test>
+    
+    <test name="Negative Tests">
+        <groups>
+            <run>
+                <include name="Negative"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.Blazedemo.Tests.FlightBookingNegativeTest"/>
+        </classes>
+    </test>
+
+</suite>
