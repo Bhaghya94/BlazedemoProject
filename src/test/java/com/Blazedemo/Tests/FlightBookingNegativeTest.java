@@ -27,7 +27,8 @@ public class FlightBookingNegativeTest extends BaseClass {
       purchase.clickPurchase();
 
       // Check confirmation page Url
-      Assert.assertFalse(driver.getPageSource().contains("Thank you"));
+      Assert.assertFalse(driver.getPageSource().contains("Thank you"), "Test Fail");
+      
   }
   
   // Non-numeric Credit Card Number
@@ -47,7 +48,8 @@ public class FlightBookingNegativeTest extends BaseClass {
       purchase.clickPurchase();
       
       // Check confirmation page Url
-      Assert.assertFalse(driver.getPageSource().contains("Thank you"));
+      Assert.assertFalse(driver.getPageSource().contains("Thank you"), "Test Fail");
+
   }
   
   // Leave required fields blank
@@ -67,7 +69,8 @@ public class FlightBookingNegativeTest extends BaseClass {
       purchase.clickPurchase();
       
       // Check confirmation page Url
-      Assert.assertFalse(driver.getPageSource().contains("Thank you"));
+      Assert.assertFalse(driver.getPageSource().contains("Thank you"), "Test Fail");
+      
   }
   
   // Same Departure & Destination City
@@ -80,7 +83,8 @@ public class FlightBookingNegativeTest extends BaseClass {
       home.clickFindFlights();
 
       // Check ReservePage Url
-      Assert.assertFalse(driver.getCurrentUrl().contains("reserve"));
+      Assert.assertFalse(driver.getCurrentUrl().contains("reserve"), "Test Fail");
+
   }
 
 	    

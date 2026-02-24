@@ -13,7 +13,25 @@ import com.Blazedemo.Utils.WaitUtil;
 
 public class FlightBookingTest extends BaseClass {
 	
-  @Test(groups = "Smoke")
+  @Test(groups = "Smoke")	
+  public void homepageDropdown() {
+	  
+	  HomePage home = new HomePage(driver);
+	  
+	  // Homepage Validation
+	  Assert.assertTrue(home.homeHeaderCheck());
+	  Assert.assertTrue(home.homeTitleCheck());
+	  Assert.assertTrue(home.homeUrlCheck());
+	  
+	  // Dropdown visibility check
+	  Assert.assertTrue(home.departureCitydropdown());
+	  Assert.assertTrue(home.destionationCitydropdown());
+	  
+	  System.out.println("Test Pass");
+	  
+  }
+	
+  @Test(groups = "Functional")
   public void flightbooking() {
 	  
 	  HomePage home = new HomePage(driver);
@@ -72,6 +90,7 @@ public class FlightBookingTest extends BaseClass {
 	  // validate that Confirmation message is displayed
 	  String msgText = confirm.getConfirmationMsg();
 	  Assert.assertEquals(msgText, "Thank you for your purchase today!");
+	  System.out.println("Test Pass");
   }
   
   // DataProvider
@@ -99,6 +118,7 @@ public class FlightBookingTest extends BaseClass {
       Assert.assertTrue(confirm.confirmationUrlCheck());
       Assert.assertEquals(confirm.getConfirmationMsg(),
               "Thank you for your purchase today!");
+      System.out.println("Test Pass");
   }
 
 

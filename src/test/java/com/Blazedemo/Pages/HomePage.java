@@ -42,6 +42,16 @@ public class HomePage {
     	return actUrl.contentEquals("https://blazedemo.com/");
     }
     
+    public boolean departureCitydropdown() {
+    	
+    	return driver.findElement(departureCity).isDisplayed();
+    }
+    
+    public boolean destionationCitydropdown() {
+    	
+    	return driver.findElement(destinationCity).isDisplayed();
+    }
+     
     public void selectCities(String from, String to) {
     	
     	// click on departure city

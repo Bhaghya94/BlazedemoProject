@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 4 failed,   4 passed</span>
+                    <span class="method-stats">9 methods, 4 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -137,6 +137,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.Blazedemo.Tests.FlightBookingTest" class="method navigator-link" hash-for-method="homepageDropdown">homepageDropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BlazeDemo_Suite" title="com.Blazedemo.Tests.FlightBookingTest" class="method navigator-link" hash-for-method="verifyMultipleBookings(Boston, New York, Siya, Street 1, Delhi, 1234, Siya)">verifyMultipleBookings(Boston, New York, Siya, Street 1, Delhi, 1234, Siya)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -173,10 +178,10 @@
                   <a name="testBlankcreditcard">
                   </a> <!-- testBlankcreditcard -->
                   <span class="method-name">testBlankcreditcard</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+                  <div class="stack-trace">java.lang.AssertionError: Test Fail expected [false] but found [true]
 	at com.Blazedemo.Tests.FlightBookingNegativeTest.testBlankcreditcard(FlightBookingNegativeTest.java:30)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 29 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -185,10 +190,10 @@
                   <a name="testEmptyField">
                   </a> <!-- testEmptyField -->
                   <span class="method-name">testEmptyField</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at com.Blazedemo.Tests.FlightBookingNegativeTest.testEmptyField(FlightBookingNegativeTest.java:70)
+                  <div class="stack-trace">java.lang.AssertionError: Test Fail expected [false] but found [true]
+	at com.Blazedemo.Tests.FlightBookingNegativeTest.testEmptyField(FlightBookingNegativeTest.java:72)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 29 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -204,8 +209,8 @@ System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.ver
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
 	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-	at com.Blazedemo.Pages.HomePage.selectCities(HomePage.java:53)
-	at com.Blazedemo.Tests.FlightBookingNegativeTest.testSameCities(FlightBookingNegativeTest.java:79)
+	at com.Blazedemo.Pages.HomePage.selectCities(HomePage.java:63)
+	at com.Blazedemo.Tests.FlightBookingNegativeTest.testSameCities(FlightBookingNegativeTest.java:82)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
@@ -216,10 +221,10 @@ Driver info: driver.version: unknown
                   <a name="testinvalidcardno">
                   </a> <!-- testinvalidcardno -->
                   <span class="method-name">testinvalidcardno</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at com.Blazedemo.Tests.FlightBookingNegativeTest.testinvalidcardno(FlightBookingNegativeTest.java:50)
+                  <div class="stack-trace">java.lang.AssertionError: Test Fail expected [false] but found [true]
+	at com.Blazedemo.Tests.FlightBookingNegativeTest.testinvalidcardno(FlightBookingNegativeTest.java:51)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 29 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -236,6 +241,13 @@ Driver info: driver.version: unknown
                   <a name="flightbooking">
                   </a> <!-- flightbooking -->
                   <span class="method-name">flightbooking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homepageDropdown">
+                  </a> <!-- homepageDropdown -->
+                  <span class="method-name">homepageDropdown</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -338,6 +350,10 @@ Driver info: driver.version: unknown
               <span class="test-group-name">Functional</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">flightbooking</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">verifyMultipleBookings</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -366,7 +382,7 @@ Driver info: driver.version: unknown
               <span class="test-group-name">Smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">flightbooking</span>
+                <span class="method-in-group-name">homepageDropdown</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -386,44 +402,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyMultipleBookings')
 data.setCell(0, 2, 'com.Blazedemo.Tests.FlightBookingTest')
-data.setCell(0, 3, 6022);
+data.setCell(0, 3, 2809);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'flightbooking')
 data.setCell(1, 2, 'com.Blazedemo.Tests.FlightBookingTest')
-data.setCell(1, 3, 5715);
+data.setCell(1, 3, 2433);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyMultipleBookings')
 data.setCell(2, 2, 'com.Blazedemo.Tests.FlightBookingTest')
-data.setCell(2, 3, 5285);
+data.setCell(2, 3, 2407);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyMultipleBookings')
-data.setCell(3, 2, 'com.Blazedemo.Tests.FlightBookingTest')
-data.setCell(3, 3, 4914);
+data.setCell(3, 1, 'testinvalidcardno')
+data.setCell(3, 2, 'com.Blazedemo.Tests.FlightBookingNegativeTest')
+data.setCell(3, 3, 2324);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testinvalidcardno')
-data.setCell(4, 2, 'com.Blazedemo.Tests.FlightBookingNegativeTest')
-data.setCell(4, 3, 4381);
+data.setCell(4, 1, 'verifyMultipleBookings')
+data.setCell(4, 2, 'com.Blazedemo.Tests.FlightBookingTest')
+data.setCell(4, 3, 2310);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testBlankcreditcard')
+data.setCell(5, 1, 'testEmptyField')
 data.setCell(5, 2, 'com.Blazedemo.Tests.FlightBookingNegativeTest')
-data.setCell(5, 3, 3606);
+data.setCell(5, 3, 2274);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testEmptyField')
+data.setCell(6, 1, 'testBlankcreditcard')
 data.setCell(6, 2, 'com.Blazedemo.Tests.FlightBookingNegativeTest')
-data.setCell(6, 3, 3413);
+data.setCell(6, 3, 2209);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testSameCities')
 data.setCell(7, 2, 'com.Blazedemo.Tests.FlightBookingNegativeTest')
-data.setCell(7, 3, 361);
+data.setCell(7, 3, 306);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'homepageDropdown')
+data.setCell(8, 2, 'com.Blazedemo.Tests.FlightBookingTest')
+data.setCell(8, 3, 125);
 window.suiteTableData['BlazeDemo_Suite']= { tableData: data, tableDiv: 'times-div-BlazeDemo_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-BlazeDemo_Suite">
               </div> <!-- times-div-BlazeDemo_Suite -->
             </div> <!-- times-div -->
@@ -438,15 +458,17 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-BlazeDemo_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.Blazedemo.Tests.FlightBookingTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyMultipleBookings</span>
+                <br/>
                 <span class="ignored-method-name">flightbooking</span>
                 <br/>
-                <span class="ignored-method-name">verifyMultipleBookings</span>
+                <span class="ignored-method-name">homepageDropdown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -464,107 +486,119 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">flightbooking</span>
-                <span class="method-start">3321 ms</span>
+                <span class="method-name">homepageDropdown</span>
+                <span class="method-start">2480 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9058 ms</span>
+                <span class="method-start">2605 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">10215 ms</span>
+                <span class="method-start">3304 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">flightbooking</span>
+                <span class="method-start">4989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7424 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7588 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMultipleBookings(Boston, New York, Siya, Street 1, Delhi, 1234, Siya)</span>
-                <span class="method-start">18686 ms</span>
+                <span class="method-start">9362 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23604 ms</span>
+                <span class="method-start">11769 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">23900 ms</span>
+                <span class="method-start">11925 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMultipleBookings(Paris, London, Arun, Lake View, Mumbai, 4567, Arun)</span>
-                <span class="method-start">26704 ms</span>
+                <span class="method-start">13748 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31992 ms</span>
+                <span class="method-start">16559 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">32230 ms</span>
+                <span class="method-start">16710 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMultipleBookings(Boston, London, Sneha, Hill Road, Pune, 7890, Sneha)</span>
-                <span class="method-start">40015 ms</span>
+                <span class="method-start">18426 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">46040 ms</span>
+                <span class="method-start">20738 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Blazedemo.Tests.FlightBookingNegativeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">46528 ms</span>
+                <span class="method-start">20958 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testBlankcreditcard</span>
-                <span class="method-start">49101 ms</span>
+                <span class="method-start">22697 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">52944 ms</span>
+                <span class="method-start">25181 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">53200 ms</span>
+                <span class="method-start">25348 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testEmptyField</span>
-                <span class="method-start">56681 ms</span>
+                <span class="method-start">27134 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">60351 ms</span>
+                <span class="method-start">29583 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">60659 ms</span>
+                <span class="method-start">29757 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testSameCities</span>
-                <span class="method-start">63428 ms</span>
+                <span class="method-start">31574 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64004 ms</span>
+                <span class="method-start">32015 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">64283 ms</span>
+                <span class="method-start">32183 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testinvalidcardno</span>
-                <span class="method-start">66852 ms</span>
+                <span class="method-start">33853 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">71491 ms</span>
+                <span class="method-start">36373 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
