@@ -13,12 +13,12 @@
     <classes>
       <class name="com.Blazedemo.Tests.FlightBookingNegativeTest">
         <methods>
-          <include name="testEmptyField"/>
           <include name="tearDown"/>
-          <include name="testSameCities"/>
-          <include name="testinvalidcardno"/>
+          <include name="TC_05_testBlankcreditcard"/>
+          <include name="TC_08_testSameCities"/>
+          <include name="TC_06_testinvalidcardno"/>
           <include name="setup"/>
-          <include name="testBlankcreditcard"/>
+          <include name="TC_07_testEmptyField"/>
         </methods>
       </class> <!-- com.Blazedemo.Tests.FlightBookingNegativeTest -->
     </classes>

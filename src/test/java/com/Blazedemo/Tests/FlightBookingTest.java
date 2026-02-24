@@ -14,7 +14,7 @@ import com.Blazedemo.Utils.WaitUtil;
 public class FlightBookingTest extends BaseClass {
 	
   @Test(groups = "Smoke")	
-  public void homepageDropdown() {
+  public void TC_01_homepageDropdown() {
 	  
 	  HomePage home = new HomePage(driver);
 	  
@@ -30,9 +30,27 @@ public class FlightBookingTest extends BaseClass {
 	  System.out.println("Test Pass");
 	  
   }
+  
+  @Test(groups = "Functional")
+  public void TC_02_searchValidCity() {
+		  
+	  HomePage home = new HomePage(driver);
+	  
+	  home.selectCities("Boston", "New York");
+	  
+	  home.clickFindFlights();
+	  
+	  Assert.assertTrue(
+              DriverSession.getDriver()
+              .getCurrentUrl()
+              .contains("reserve.php"),
+              "Navigation to Reserve page failed");
+		  
+  }
+  
 	
   @Test(groups = "Functional")
-  public void flightbooking() {
+  public void TC_03_flightBooking() {
 	  
 	  HomePage home = new HomePage(driver);
       ReservePage reserve = new ReservePage(driver);
@@ -95,7 +113,7 @@ public class FlightBookingTest extends BaseClass {
   
   // DataProvider
   @Test(dataProvider = "bookingData", groups = "Functional")
-  public void verifyMultipleBookings(String fromCity,
+  public void TC_04_verifyMultipleBookings(String fromCity,
                                      String toCity,
                                      String name,
                                      String address,

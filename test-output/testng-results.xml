@@ -1,58 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="12" passed="5" failed="4" skipped="0">
+<testng-results ignored="4" total="14" passed="6" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-24T14:06:45 IST" name="BlazeDemo Suite" finished-at="2026-02-24T14:07:22 IST" duration-ms="36586">
+  <suite started-at="2026-02-24T16:38:56 IST" name="BlazeDemo Suite" finished-at="2026-02-24T16:39:37 IST" duration-ms="41142">
     <groups>
       <group name="Functional">
-        <method signature="FlightBookingTest.flightbooking()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" name="flightbooking" class="com.Blazedemo.Tests.FlightBookingTest"/>
-        <method signature="FlightBookingTest.verifyMultipleBookings(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" name="verifyMultipleBookings" class="com.Blazedemo.Tests.FlightBookingTest"/>
+        <method signature="FlightBookingTest.TC_02_searchValidCity()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" name="TC_02_searchValidCity" class="com.Blazedemo.Tests.FlightBookingTest"/>
+        <method signature="FlightBookingTest.TC_03_flightBooking()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" name="TC_03_flightBooking" class="com.Blazedemo.Tests.FlightBookingTest"/>
+        <method signature="FlightBookingTest.TC_04_verifyMultipleBookings(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" name="TC_04_verifyMultipleBookings" class="com.Blazedemo.Tests.FlightBookingTest"/>
       </group> <!-- Functional -->
       <group name="Negative">
-        <method signature="FlightBookingNegativeTest.testBlankcreditcard()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" name="testBlankcreditcard" class="com.Blazedemo.Tests.FlightBookingNegativeTest"/>
-        <method signature="FlightBookingNegativeTest.testEmptyField()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" name="testEmptyField" class="com.Blazedemo.Tests.FlightBookingNegativeTest"/>
-        <method signature="FlightBookingNegativeTest.testSameCities()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" name="testSameCities" class="com.Blazedemo.Tests.FlightBookingNegativeTest"/>
-        <method signature="FlightBookingNegativeTest.testinvalidcardno()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" name="testinvalidcardno" class="com.Blazedemo.Tests.FlightBookingNegativeTest"/>
+        <method signature="FlightBookingNegativeTest.TC_05_testBlankcreditcard()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" name="TC_05_testBlankcreditcard" class="com.Blazedemo.Tests.FlightBookingNegativeTest"/>
+        <method signature="FlightBookingNegativeTest.TC_06_testinvalidcardno()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" name="TC_06_testinvalidcardno" class="com.Blazedemo.Tests.FlightBookingNegativeTest"/>
+        <method signature="FlightBookingNegativeTest.TC_07_testEmptyField()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" name="TC_07_testEmptyField" class="com.Blazedemo.Tests.FlightBookingNegativeTest"/>
+        <method signature="FlightBookingNegativeTest.TC_08_testSameCities()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" name="TC_08_testSameCities" class="com.Blazedemo.Tests.FlightBookingNegativeTest"/>
       </group> <!-- Negative -->
       <group name="Smoke">
-        <method signature="FlightBookingTest.homepageDropdown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@3e78b6a5]" name="homepageDropdown" class="com.Blazedemo.Tests.FlightBookingTest"/>
+        <method signature="FlightBookingTest.TC_01_homepageDropdown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@769a1df5]" name="TC_01_homepageDropdown" class="com.Blazedemo.Tests.FlightBookingTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2026-02-24T14:06:45 IST" name="Smoke Tests" finished-at="2026-02-24T14:06:48 IST" duration-ms="2841">
+    <test started-at="2026-02-24T16:38:56 IST" name="Smoke Tests" finished-at="2026-02-24T16:38:59 IST" duration-ms="2937">
       <class name="com.Blazedemo.Tests.FlightBookingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@3e78b6a5]" started-at="2026-02-24T14:06:45 IST" name="setup" finished-at="2026-02-24T14:06:48 IST" duration-ms="2480" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@769a1df5]" started-at="2026-02-24T16:38:56 IST" name="setup" finished-at="2026-02-24T16:38:58 IST" duration-ms="1825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="homepageDropdown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@3e78b6a5]" started-at="2026-02-24T14:06:48 IST" name="homepageDropdown" finished-at="2026-02-24T14:06:48 IST" duration-ms="125" status="PASS">
+        <test-method signature="TC_01_homepageDropdown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@769a1df5]" started-at="2026-02-24T16:38:58 IST" name="TC_01_homepageDropdown" finished-at="2026-02-24T16:38:59 IST" duration-ms="913" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homepageDropdown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@3e78b6a5]" started-at="2026-02-24T14:06:48 IST" name="tearDown" finished-at="2026-02-24T14:06:48 IST" duration-ms="194" status="PASS">
+        </test-method> <!-- TC_01_homepageDropdown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@769a1df5]" started-at="2026-02-24T16:38:59 IST" name="tearDown" finished-at="2026-02-24T16:38:59 IST" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Blazedemo.Tests.FlightBookingTest -->
     </test> <!-- Smoke Tests -->
-    <test started-at="2026-02-24T14:06:48 IST" name="Functional Tests" finished-at="2026-02-24T14:07:06 IST" duration-ms="17594">
+    <test started-at="2026-02-24T16:38:59 IST" name="Functional Tests" finished-at="2026-02-24T16:39:21 IST" duration-ms="21875">
       <class name="com.Blazedemo.Tests.FlightBookingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" started-at="2026-02-24T14:06:48 IST" name="setup" finished-at="2026-02-24T14:06:50 IST" duration-ms="1685" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:38:59 IST" name="setup" finished-at="2026-02-24T16:39:01 IST" duration-ms="2088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="flightbooking()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" started-at="2026-02-24T14:06:50 IST" name="flightbooking" finished-at="2026-02-24T14:06:53 IST" duration-ms="2433" status="PASS">
+        <test-method signature="TC_02_searchValidCity()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:01 IST" name="TC_02_searchValidCity" finished-at="2026-02-24T16:39:02 IST" duration-ms="775" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- flightbooking -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" started-at="2026-02-24T14:06:53 IST" name="tearDown" finished-at="2026-02-24T14:06:53 IST" duration-ms="161" status="PASS">
+        </test-method> <!-- TC_02_searchValidCity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:02 IST" name="tearDown" finished-at="2026-02-24T16:39:02 IST" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" started-at="2026-02-24T14:06:53 IST" name="setup" finished-at="2026-02-24T14:06:55 IST" duration-ms="1774" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:02 IST" name="setup" finished-at="2026-02-24T16:39:04 IST" duration-ms="2118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyMultipleBookings(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" started-at="2026-02-24T14:06:55 IST" name="verifyMultipleBookings" data-provider="bookingData" finished-at="2026-02-24T14:06:57 IST" duration-ms="2407" status="PASS">
+        <test-method signature="TC_03_flightBooking()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:04 IST" name="TC_03_flightBooking" finished-at="2026-02-24T16:39:07 IST" duration-ms="2459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_flightBooking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:07 IST" name="tearDown" finished-at="2026-02-24T16:39:07 IST" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:07 IST" name="setup" finished-at="2026-02-24T16:39:09 IST" duration-ms="2003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_04_verifyMultipleBookings(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:09 IST" name="TC_04_verifyMultipleBookings" data-provider="bookingData" finished-at="2026-02-24T16:39:11 IST" duration-ms="2127" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,16 +105,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMultipleBookings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" started-at="2026-02-24T14:06:57 IST" name="tearDown" finished-at="2026-02-24T14:06:57 IST" duration-ms="156" status="PASS">
+        </test-method> <!-- TC_04_verifyMultipleBookings -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:11 IST" name="tearDown" finished-at="2026-02-24T16:39:11 IST" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" started-at="2026-02-24T14:06:57 IST" name="setup" finished-at="2026-02-24T14:06:59 IST" duration-ms="1823" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:11 IST" name="setup" finished-at="2026-02-24T16:39:13 IST" duration-ms="2107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyMultipleBookings(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" started-at="2026-02-24T14:06:59 IST" name="verifyMultipleBookings" data-provider="bookingData" finished-at="2026-02-24T14:07:02 IST" duration-ms="2809" status="PASS">
+        <test-method signature="TC_04_verifyMultipleBookings(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:13 IST" name="TC_04_verifyMultipleBookings" data-provider="bookingData" finished-at="2026-02-24T16:39:16 IST" duration-ms="2143" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,16 +154,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMultipleBookings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" started-at="2026-02-24T14:07:02 IST" name="tearDown" finished-at="2026-02-24T14:07:02 IST" duration-ms="151" status="PASS">
+        </test-method> <!-- TC_04_verifyMultipleBookings -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:16 IST" name="tearDown" finished-at="2026-02-24T16:39:16 IST" duration-ms="133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" started-at="2026-02-24T14:07:02 IST" name="setup" finished-at="2026-02-24T14:07:04 IST" duration-ms="1715" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:16 IST" name="setup" finished-at="2026-02-24T16:39:19 IST" duration-ms="3175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyMultipleBookings(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" started-at="2026-02-24T14:07:04 IST" name="verifyMultipleBookings" data-provider="bookingData" finished-at="2026-02-24T14:07:06 IST" duration-ms="2310" status="PASS">
+        <test-method signature="TC_04_verifyMultipleBookings(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:19 IST" name="TC_04_verifyMultipleBookings" data-provider="bookingData" finished-at="2026-02-24T16:39:21 IST" duration-ms="2120" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -190,20 +203,20 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMultipleBookings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@2bec854f]" started-at="2026-02-24T14:07:06 IST" name="tearDown" finished-at="2026-02-24T14:07:06 IST" duration-ms="156" status="PASS">
+        </test-method> <!-- TC_04_verifyMultipleBookings -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingTest@31edaa7d]" started-at="2026-02-24T16:39:21 IST" name="tearDown" finished-at="2026-02-24T16:39:21 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Blazedemo.Tests.FlightBookingTest -->
     </test> <!-- Functional Tests -->
-    <test started-at="2026-02-24T14:07:06 IST" name="Negative Tests" finished-at="2026-02-24T14:07:22 IST" duration-ms="15602">
+    <test started-at="2026-02-24T16:39:21 IST" name="Negative Tests" finished-at="2026-02-24T16:39:37 IST" duration-ms="15991">
       <class name="com.Blazedemo.Tests.FlightBookingNegativeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" started-at="2026-02-24T14:07:06 IST" name="setup" finished-at="2026-02-24T14:07:08 IST" duration-ms="1739" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" started-at="2026-02-24T16:39:21 IST" name="setup" finished-at="2026-02-24T16:39:23 IST" duration-ms="2032" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testBlankcreditcard()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" started-at="2026-02-24T14:07:08 IST" name="testBlankcreditcard" finished-at="2026-02-24T14:07:10 IST" duration-ms="2209" status="FAIL">
+        <test-method signature="TC_05_testBlankcreditcard()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" started-at="2026-02-24T16:39:23 IST" name="TC_05_testBlankcreditcard" finished-at="2026-02-24T16:39:25 IST" duration-ms="2124" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test Fail expected [false] but found [true]]]>
@@ -213,7 +226,7 @@
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertFalse(Assert.java:79)
-at com.Blazedemo.Tests.FlightBookingNegativeTest.testBlankcreditcard(FlightBookingNegativeTest.java:30)
+at com.Blazedemo.Tests.FlightBookingNegativeTest.TC_05_testBlankcreditcard(FlightBookingNegativeTest.java:30)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -245,16 +258,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBlankcreditcard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" started-at="2026-02-24T14:07:10 IST" name="tearDown" finished-at="2026-02-24T14:07:11 IST" duration-ms="167" status="PASS">
+        </test-method> <!-- TC_05_testBlankcreditcard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" started-at="2026-02-24T16:39:26 IST" name="tearDown" finished-at="2026-02-24T16:39:26 IST" duration-ms="139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" started-at="2026-02-24T14:07:11 IST" name="setup" finished-at="2026-02-24T14:07:12 IST" duration-ms="1786" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" started-at="2026-02-24T16:39:26 IST" name="setup" finished-at="2026-02-24T16:39:28 IST" duration-ms="2123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testEmptyField()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" started-at="2026-02-24T14:07:12 IST" name="testEmptyField" finished-at="2026-02-24T14:07:15 IST" duration-ms="2274" status="FAIL">
+        <test-method signature="TC_06_testinvalidcardno()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" started-at="2026-02-24T16:39:28 IST" name="TC_06_testinvalidcardno" finished-at="2026-02-24T16:39:30 IST" duration-ms="2097" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test Fail expected [false] but found [true]]]>
@@ -264,7 +277,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertFalse(Assert.java:79)
-at com.Blazedemo.Tests.FlightBookingNegativeTest.testEmptyField(FlightBookingNegativeTest.java:72)
+at com.Blazedemo.Tests.FlightBookingNegativeTest.TC_06_testinvalidcardno(FlightBookingNegativeTest.java:51)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -296,16 +309,67 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEmptyField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" started-at="2026-02-24T14:07:15 IST" name="tearDown" finished-at="2026-02-24T14:07:15 IST" duration-ms="170" status="PASS">
+        </test-method> <!-- TC_06_testinvalidcardno -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" started-at="2026-02-24T16:39:30 IST" name="tearDown" finished-at="2026-02-24T16:39:30 IST" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" started-at="2026-02-24T14:07:15 IST" name="setup" finished-at="2026-02-24T14:07:17 IST" duration-ms="1817" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" started-at="2026-02-24T16:39:30 IST" name="setup" finished-at="2026-02-24T16:39:32 IST" duration-ms="2133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testSameCities()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" started-at="2026-02-24T14:07:17 IST" name="testSameCities" finished-at="2026-02-24T14:07:17 IST" duration-ms="306" status="FAIL">
+        <test-method signature="TC_07_testEmptyField()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" started-at="2026-02-24T16:39:32 IST" name="TC_07_testEmptyField" finished-at="2026-02-24T16:39:34 IST" duration-ms="2032" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test Fail expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test Fail expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at com.Blazedemo.Tests.FlightBookingNegativeTest.TC_07_testEmptyField(FlightBookingNegativeTest.java:72)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_07_testEmptyField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" started-at="2026-02-24T16:39:35 IST" name="tearDown" finished-at="2026-02-24T16:39:35 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" started-at="2026-02-24T16:39:35 IST" name="setup" finished-at="2026-02-24T16:39:37 IST" duration-ms="1997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_08_testSameCities()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" started-at="2026-02-24T16:39:37 IST" name="TC_08_testSameCities" finished-at="2026-02-24T16:39:37 IST" duration-ms="212" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Cannot locate option with text: Boston
@@ -323,7 +387,7 @@ Driver info: driver.version: unknown
 at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
 at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
 at com.Blazedemo.Pages.HomePage.selectCities(HomePage.java:63)
-at com.Blazedemo.Tests.FlightBookingNegativeTest.testSameCities(FlightBookingNegativeTest.java:82)
+at com.Blazedemo.Tests.FlightBookingNegativeTest.TC_08_testSameCities(FlightBookingNegativeTest.java:82)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -355,59 +419,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSameCities -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" started-at="2026-02-24T14:07:17 IST" name="tearDown" finished-at="2026-02-24T14:07:17 IST" duration-ms="167" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" started-at="2026-02-24T14:07:17 IST" name="setup" finished-at="2026-02-24T14:07:19 IST" duration-ms="1670" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testinvalidcardno()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" started-at="2026-02-24T14:07:19 IST" name="testinvalidcardno" finished-at="2026-02-24T14:07:21 IST" duration-ms="2324" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Test Fail expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test Fail expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertFalse(Assert.java:79)
-at com.Blazedemo.Tests.FlightBookingNegativeTest.testinvalidcardno(FlightBookingNegativeTest.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testinvalidcardno -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@51a9ad5e]" started-at="2026-02-24T14:07:22 IST" name="tearDown" finished-at="2026-02-24T14:07:22 IST" duration-ms="171" status="PASS">
+        </test-method> <!-- TC_08_testSameCities -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Blazedemo.Tests.FlightBookingNegativeTest@5f20155b]" started-at="2026-02-24T16:39:37 IST" name="tearDown" finished-at="2026-02-24T16:39:37 IST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

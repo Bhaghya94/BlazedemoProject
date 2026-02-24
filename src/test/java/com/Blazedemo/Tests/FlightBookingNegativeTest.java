@@ -12,7 +12,7 @@ public class FlightBookingNegativeTest extends BaseClass {
 	
   // Blank Credit Card	
   @Test(groups = "Negative")
-  public void testBlankcreditcard() {
+  public void TC_05_testBlankcreditcard() {
 	  
 	  HomePage home = new HomePage(driver);
       ReservePage reserve = new ReservePage(driver);
@@ -33,7 +33,7 @@ public class FlightBookingNegativeTest extends BaseClass {
   
   // Non-numeric Credit Card Number
   @Test(groups = "Negative")
-  public void testinvalidcardno() {
+  public void TC_06_testinvalidcardno() {
 	  
 	  HomePage home = new HomePage(driver);
       ReservePage reserve = new ReservePage(driver);
@@ -54,7 +54,7 @@ public class FlightBookingNegativeTest extends BaseClass {
   
   // Leave required fields blank
   @Test(groups = "Negative")
-  public void testEmptyField() {
+  public void TC_07_testEmptyField() {
 	  
 	  HomePage home = new HomePage(driver);
       ReservePage reserve = new ReservePage(driver);
@@ -75,7 +75,7 @@ public class FlightBookingNegativeTest extends BaseClass {
   
   // Same Departure & Destination City
   @Test(groups = "Negative")
-  public void testSameCities() {
+  public void TC_08_testSameCities() {
 	  
 	  HomePage home = new HomePage(driver);
 
