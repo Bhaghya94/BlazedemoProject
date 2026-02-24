@@ -11,25 +11,6 @@ import com.Blazedemo.Utils.DriverSession;
 
 public class BaseClass {
 	
-//  public static WebDriver driver;
-//	
-//  @BeforeMethod(alwaysRun = true)
-//  public void DriverSetup() {
-//	  
-//	  driver = DriverSession.getDriver();
-//	  driver.get("https://blazedemo.com/");
-//	  
-//  }
-//  
-//  @AfterMethod(alwaysRun = true)
-//  public void DriverClose() {
-//	  
-//      if (driver != null) {
-//    	  
-//          driver.quit();
-//      }
-//  }
-	
 	public WebDriver driver;
 
     @BeforeMethod(alwaysRun = true)
